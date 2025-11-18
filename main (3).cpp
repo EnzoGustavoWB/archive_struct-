@@ -32,18 +32,18 @@ void cadastrarProduto(produto lista[], int &qtd)
 void listarProduto(produto lista[], int qtd)
 {
     if (qtd == 0) {
-        cout << "Nenhum produto cadastrado!\n";
+        cout << "Nenhum produto cadastrado!\n" << endl;
        
         return;
     }
 
-    cout << "\n---- LISTA DE PRODUTOS ----\n";
+    cout << "\n---- LISTA DE PRODUTOS ----\n" << endl;
     for (int i = 0; i < qtd; i++) {
         cout << "Codigo: " << lista[i].codigo << endl;
         cout << "Nome: " << lista[i].nome << endl;
         cout << "Quantidade: " << lista[i].quantidade << endl;
         cout << "Valor: R$ " << lista[i].valor << endl;
-        cout << "----------------------------\n";
+        cout << "----------------------------\n" << endl;;
     }
 }
 
@@ -51,7 +51,7 @@ void listarProduto(produto lista[], int qtd)
 void buscarProduto(produto lista[], int qtd)
 {
     int codigo;
-    cout << "Digite o codigo do produto que deseja buscar: ";
+    cout << "Digite o codigo do produto que deseja buscar: " << endl;
     cin >> codigo;
 
     for (int i = 0; i < qtd; i++) {
